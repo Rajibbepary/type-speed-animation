@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box ;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh ;
+        background-color:#434750 ;
+      }
+      /*
+      ul{
+        position: relative;
+        transform:skewY(-15deg) ;
+      }
+      ul li{
+        position: relative;
+        list-style: none;
+        width:200px ;
+        background-color:#3e3f46 ;
+        padding:15px ;
+        z-index:var(--i) ;
+        transition:0.5s ;
+      }
+
+      ul li:hover{
+        background-color: #33a3ee;
+        transform:translateX(50px) ;
+      }
+
+
+      ul li::before{
+        content:"" ;
+        position: absolute;
+        top: 0;
+        left: -40px;
+        width:40px ;
+        height:100% ;
+        background-color:#2e3133 ;
+        transform-origin: right;
+        transform:skewY(45deg) ;
+        transition:0.5s ;
+      }
+
+      ul li:hover::before{
+        background: #1f5378;
+      }
+      ul li::after{
+        content: "";
+        position: absolute;
+        top:-40px ;
+        left:0 ;
+        width:100% ;
+        height:40px ;
+        background-color:#2e3133 ;
+        transform-origin:bottom ;
+        transform:skewX(45deg) ;
+        transition: 0.5s;
+      }
+
+      ul li:hover::after{
+        background: #2982b9;
+      }
+      ul li a{
+        list-style: none;
+        color:#999 ;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing:0.05em ;
+        transition: 0.5s;
+      }
+
+      ul li:hover a{
+        color: #fff;
+      }
+
+      ul li:last-child::after{
+        box-shadow:-120px 120px 20px rgba(0,0,0,0.25 ) ;
+      }
+
+      */
+      .loading{
+        position: relative;
+        display: flex;
+        gap:15px ;
+      }
+      .loading span{
+        position: relative;
+        width: 5px;
+        height: 80px;
+        background:#434750;
+        border-radius:100% ;
+      }
+
+      .loading span::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        animation:animate 8s linear infinite ;
+        animation-delay: calc(var(--i)*0.1s);
+      }
+      @keyframes animate{
+        0%{
+          background: #0f0;
+          box-shadow: 0 0 5px #0f0,
+          0 0 15px #0f0,
+          0 0 30px #0f0,
+          0 0 50px #0f0;
+          rotate: 0deg;
+        }
+        20%{
+          background: #0f0;
+          box-shadow: 0 0 5px #0f0,
+          0 0 15px #0f0,
+          0 0 30px #0f0,
+          0 0 50px #0f0;
+          rotate:0deg ;
+        }
+        40%{
+          background: #0f0;
+          box-shadow: 0 0 5px #0f0,
+          0 0 15px #0f0,
+          0 0 30px #0f0,
+          0 0 50px #0f0;
+          rotate:90deg ;
+          transform-origin:bottom ;
+          filter: hue-rotate(0deg);
+        }
+        80%{
+          background: #0f0;
+          box-shadow: 0 0 5px #0f0,
+          0 0 15px #0f0,
+          0 0 30px #0f0,
+          0 0 50px #0f0;
+          rotate:90deg ;
+          transform-origin:bottom ;
+          filter: hue-rotate(360deg);
+        }
+
+        90%{
+          background: #000;
+          box-shadow: none;
+          rotate: 0deg;
+        }
+
+        90.1%,100%{
+          background: #000;
+          box-shadow: none;
+        }
+      }
+    </style>
+</head>
+<body>
+<!--
+  <ul>
+    <li style="--i:5;"><a href="#">face book</a></li>
+    <li style="--i:4;"><a href="#">messenger</a></li>
+    <li style="--i:3;"><a href="#">google</a></li>
+    <li style="--i:2;"><a href="#">whatsapp</a></li>
+    <li style="--i:1;"><a href="#">twitter</a></li>
+  </ul>
+  --->
+
+  
+  
+    
+    <div class="loading">
+  
+      <span style="--i:1;"></span> 
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+      <span style="--i:4;"></span>
+      <span style="--i:5;"></span>
+      <span style="--i:6;"></span>
+      <span style="--i:7;"></span>
+      <span style="--i:8;"></span>
+      <span style="--i:9;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:21;"></span> 
+      <span style="--i:22;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:27;"></span>
+      <span style="--i:28;"></span>
+      <span style="--i:29;"></span>
+      <span style="--i:30;"></span>
+      <span style="--i:31;"></span>
+      <span style="--i:32;"></span>
+      <span style="--i:33;"></span>
+      <span style="--i:34;"></span>
+      <span style="--i:35;"></span>
+      <span style="--i:36;"></span>
+      <span style="--i:37;"></span>
+      <span style="--i:38;"></span>
+      <span style="--i:40;"></span>
+      <span style="--i:41;"></span>
+        <span style="--i:41;"></span> 
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>
+        <span style="--i:50;"></span>
+        <span style="--i:51;"></span>
+        <span style="--i:52;"></span>
+        <span style="--i:53;"></span>
+        <span style="--i:54;"></span>
+        <span style="--i:55;"></span>
+        <span style="--i:56;"></span>
+        
+      </div>
+     
+    </div>
+   
+  
+
+  
+  
+</body>
+</html>
